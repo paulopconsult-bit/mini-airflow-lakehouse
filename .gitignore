@@ -17,18 +17,18 @@ Thumbs.db
 # --- DADOS (OPCIONAL) ---
 # Se você quiser que o GitHub mostre apenas o código e não os dados pesados:
 01_entrada_raw/*.csv
-02_processando
+02_processando/
 #03_processado_bronze/*.parquet
 04_curadoria_silver/*.parquet
 05_business_silver/*.parquet
-06_analitico_gold/*.parquet
-#07_erros
-#08_logs
-09_validacao
-10_relatorios
-11_auditoria
-12_backup
-13_work
+#06_analitico_gold/*.parquet
+07_erros/
+08_logs/
+09_validacao/
+10_relatorios/
+11_auditoria/
+12_backup/
+13_work/
 
 # --- ARQUIVOS(OPCIONAL) ---
 data_frame_python.parquet
