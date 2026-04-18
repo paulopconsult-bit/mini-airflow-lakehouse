@@ -1,6 +1,0 @@
-[2026-04-14 18:16:23] Origem da execução: Execução manual pelo usuário: Paulo
-[2026-04-14 18:16:23] === INÍCIO DA ORQUESTRAÇÃO ===
-[2026-04-14 18:16:23] Iniciando: 01_data_frame_python_ingestao.py
-[2026-04-14 18:16:24] STDOUT 01_data_frame_python_ingestao.py: Primeiro arquivo criado com 5829 registros: G:\Meu Drive\mini-airflow\01_entrada_raw\20260414_181624_data_frame_python.csv
-[2026-04-14 18:16:24] Finalizado: 01_data_frame_python_ingestao.py
-[2026-04-14 18:16:24] Iniciando: 02_process_03_data_frame_python_bronze.py
