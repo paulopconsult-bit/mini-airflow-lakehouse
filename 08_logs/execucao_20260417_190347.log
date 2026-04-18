@@ -1,0 +1,30 @@
+[2026-04-17 19:03:47] Origem da execução: Execução manual pelo usuário: Paulo
+[2026-04-17 19:03:47] === INÍCIO DA ORQUESTRAÇÃO ===
+[2026-04-17 19:03:47] Iniciando: 01_data_frame_python_ingestao.py
+[2026-04-17 19:03:49] STDOUT 01_data_frame_python_ingestao.py: Primeiro arquivo criado com 8551 registros: G:\Meu Drive\mini-airflow\01_entrada_raw\20260417_190349_data_frame_python.csv
+[2026-04-17 19:03:49] Finalizado: 01_data_frame_python_ingestao.py
+[2026-04-17 19:03:49] Iniciando: 02_process_03_data_frame_python_bronze.py
+[2026-04-17 19:03:51] STDOUT 02_process_03_data_frame_python_bronze.py: === INICIANDO SCRIPT 02 (INGESTÃO + BACKUP + MANIFESTO) ===
+
+Lendo: 20260417_190349_data_frame_python.csv
+  -> [OK] Backup salvo em 12_backup
+  -> [OK] Consolidado na camada Bronze
+  -> [OK] Registrado no manifesto_ingestao.csv
+
+=== SCRIPT 02 FINALIZADO COM SUCESSO ===
+[2026-04-17 19:03:51] Finalizado: 02_process_03_data_frame_python_bronze.py
+[2026-04-17 19:03:51] Iniciando: 04_data_frame_python_silver_1.py
+[2026-04-17 19:03:52] STDOUT 04_data_frame_python_silver_1.py: Silver Transacional gerado com sucesso: G:\Meu Drive\mini-airflow\04_curadoria_silver\tb_df_py.parquet
+[2026-04-17 19:03:52] Finalizado: 04_data_frame_python_silver_1.py
+[2026-04-17 19:03:52] Iniciando: 05_data_frame_python_silver_2.py
+[2026-04-17 19:03:53] STDOUT 05_data_frame_python_silver_2.py: Silver Business gerado com sucesso (Data e tp_classe ajustados): G:\Meu Drive\mini-airflow\05_business_silver\tb_df_py.parquet
+[2026-04-17 19:03:53] Finalizado: 05_data_frame_python_silver_2.py
+[2026-04-17 19:03:53] Iniciando: 06_01_data_frame_dim_gold.py
+[2026-04-17 19:03:54] Finalizado: 06_01_data_frame_dim_gold.py
+[2026-04-17 19:03:54] Validando dimensões GOLD...
+[2026-04-17 19:03:54] Dimensões GOLD validadas com sucesso.
+[2026-04-17 19:03:54] Iniciando: 06_02_data_frame_python_fato_gold.py
+[2026-04-17 19:03:55] STDOUT 06_02_data_frame_python_fato_gold.py: GOLD FATO gerado com sucesso e formatado para o BigQuery!
+[2026-04-17 19:03:55] Finalizado: 06_02_data_frame_python_fato_gold.py
+[2026-04-17 19:03:55] === ORQUESTRAÇÃO FINALIZADA COM SUCESSO ===
+[2026-04-17 19:03:55] Lock removido. Orquestração liberada para próxima execução.
