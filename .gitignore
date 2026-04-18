@@ -16,14 +16,15 @@ Thumbs.db
 
 # --- DADOS (OPCIONAL) ---
 # Se você quiser que o GitHub mostre apenas o código e não os dados pesados:
+#00_script/*.py
 01_entrada_raw/*.csv
 02_processando/
 #03_processado_bronze/*.parquet
 04_curadoria_silver/*.parquet
 05_business_silver/*.parquet
 #06_analitico_gold/*.parquet
-07_erros/
-08_logs/
+#07_erros/
+#08_logs/
 09_validacao/
 10_relatorios/
 11_auditoria/
