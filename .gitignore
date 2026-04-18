@@ -23,8 +23,8 @@ Thumbs.db
 04_curadoria_silver/*.parquet
 05_business_silver/*.parquet
 #06_analitico_gold/*.parquet
-#07_erros/
-#08_logs/
+07_erros/
+08_logs/
 09_validacao/
 10_relatorios/
 11_auditoria/
