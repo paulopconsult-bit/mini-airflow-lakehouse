@@ -6,15 +6,15 @@ Este projeto demonstra a implementação de um Lakehouse Híbrido funcional. A C
 **🏗️ Arquitetura do Projeto**
 O pipeline utiliza o hardware local como motor de cálculo para realizar a curadoria de dados em camadas:
 
-RAW (Bronze): Ingestão de arquivos CSV sintéticos (gerados via script) com controle de logs, backup dos originais e manifesto de carga.
+**RAW** (Bronze): Ingestão de arquivos CSV sintéticos (gerados via script) com controle de logs, backup dos originais e manifesto de carga.
 
-SILVER (Curadoria): Padronização técnica (Snake Case/ASCII) e aplicação de tipagem semântica profunda.
+**SILVER** (Curadoria): Padronização técnica (Snake Case/ASCII) e aplicação de tipagem semântica profunda.
 
-GOLD (Analítico): Modelagem Dimensional (Star Schema) com separação entre Fatos e Dimensões, incluindo métricas de negócio.
+**GOLD** (Analítico): Modelagem Dimensional (Star Schema) com separação entre Fatos e Dimensões, incluindo métricas de negócio.
 
-CLOUD DW: Upload automatizado para o Google Cloud Storage e consumo via BigQuery através de Views otimizadas.
+**CLOUD DW**: Upload automatizado para o Google Cloud Storage e consumo via BigQuery através de **Views** (Business) otimizadas.
 
-*📂 Estrutura de Diretórios e Estratégia de Performance*
+**📂 Estrutura de Diretórios e Estratégia de Performance**
 text
 
 ```
