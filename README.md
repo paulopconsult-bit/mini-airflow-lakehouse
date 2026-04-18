@@ -14,6 +14,7 @@ CLOUD DW: Upload automatizado para o Google Cloud Storage e consumo via BigQuery
 📂 Estrutura de Diretórios e Estratégia de Performance
 text
 
+```
 G:\MEU DRIVE\MINI-AIRFLOW (Google Drive Sincronizado Offline)
 ├── 00_script             <-- Maestro: Todos os scripts Python (ETL e Orquestração)
 ├── 01_entrada_raw        <-- Bronze Inbound: Landing zone dos arquivos CSV sintéticos
@@ -26,6 +27,7 @@ G:\MEU DRIVE\MINI-AIRFLOW (Google Drive Sincronizado Offline)
 C:\SCRIPTS (Local Disk)
 ├── executar_orquestrador.bat  --> Disparador local para máxima velocidade no Windows
 └── executar_upload_gcs.bat    --> Disparador local para acelerar a intercomunicação com o OS
+```
 
 🛠️ Stack Tecnológica & Estratégia de Infra
 
@@ -46,3 +48,16 @@ Para otimização de recursos nesta fase inicial, as seguintes camadas foram pro
 09_validacao: Implementação de testes de expectativa (Great Expectations) para Data Quality.
 10_relatorios: Geração automática de PDFs com sumários de carga diária.
 11_auditoria: Log detalhado de alteração de esquemas e acesso aos dados (Data Lineage avançado).
+
+---
+
+## 📊 Entrega de Dados e Visualização (Dashboard Live)
+
+A ponta final do pipeline (Camada Gold) é consumida via **BigQuery Views** e visualizada no **Looker Studio**. 
+O dashboard permite o monitoramento em tempo real da saúde da ingestão, volumetria de lotes e métricas de negócio por UF.
+
+🔗 **[Acesse o Dashboard Interativo aqui](https://datastudio.google.com/reporting/1f5f3a7c-6ea2-4de7-9760-e2dcc91d8b6a)**
+
+> **Monitoramento:** O painel reflete o status das cargas automatizadas pela CPU local e sincronizadas via **Cloud Storage**.
+
+---
