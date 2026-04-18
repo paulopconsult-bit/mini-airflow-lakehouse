@@ -1,4 +1,6 @@
 🚀 Mini-Airflow Lakehouse: End-to-End Hybrid Pipeline
+
+🏛️ Introdução
 Este projeto demonstra a implementação de um Lakehouse Híbrido funcional. A CPU local simula um servidor de processamento dedicado, automatizando o fluxo da Medallion Architecture sobre o Google Drive e sincronizando os resultados com o Google Cloud.
 
 🏗️ Arquitetura do Projeto
